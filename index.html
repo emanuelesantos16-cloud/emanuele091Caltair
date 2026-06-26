@@ -64,6 +64,26 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
+        /* Container Responsivo para o Vídeo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px; 
+            height: 0; 
+            overflow: hidden;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -72,7 +92,6 @@
             color: white;
         }
 
-        /* Destaque para Citações */
         blockquote {
             font-style: italic;
             color: #555;
@@ -92,6 +111,7 @@
 <nav>
     <a href="#historia">História</a>
     <a href="#abordagens">Abordagens</a>
+    <a href="#video">Conteúdo em Vídeo</a>
     <a href="#importancia">Importância</a>
 </nav>
 
@@ -105,14 +125,22 @@
         </blockquote>
     </section>
 
-    <section id="abordagens">
+    <section id="video" style="margin-top: 40px;">
+        <h2>Vídeo Destacado</h2>
+        <p>Assista abaixo a um conteúdo selecionado sobre o tema:</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kuA2l7tXtE4?si=QoaTObsussNkCjMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="abordagens" style="margin-top: 40px;">
         <h2>Principais Abordagens</h2>
         <p>A psicologia não é uma ciência única, mas um campo vasto com diferentes perspectivas:</p>
         
         <div class="grid">
             <div class="card">
                 <h3>Psicanálise</h3>
-                <p>Focada no inconsciente e em traumas de infância. Criada por Sigmund Freud, utiliza a fala como cura.</p>
+                <p>Focada no unconscious e em traumas de infância. Criada por Sigmund Freud, utiliza a fala como cura.</p>
             </div>
             <div class="card">
                 <h3>TCC (Terapia Cognitivo-Comportamental)</h3>
